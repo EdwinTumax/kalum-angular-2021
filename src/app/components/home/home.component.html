@@ -1,0 +1,33 @@
+<div class="card border-primary mt-3">
+    <div class="card-header">
+        Clases
+    </div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Listado de clases</h5>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Descripción</th>
+                    <th>Ciclo</th>
+                    <th>Cupo Maximo</th>
+                    <th>Cupo Minimo</th>                    
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of clases; let i = index">
+                <tr>
+                    <td>{{i + 1}}</td>
+                    <td>{{item.descripcion}}</td>
+                    <td>{{item.ciclo}}</td>
+                    <td>{{item.cupoMaximo}}</td>
+                    <td>{{item.cupoMinimo}}</td>
+                    <td>
+                        <button type="button" name="asignacion" class="btn btn-primary btn-sm">Asignacion</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
