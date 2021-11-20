@@ -11,6 +11,9 @@
                 <a class="nav-link" [routerLink]="['home']">Home </a>
             </li>
             <li class="nav-item" *ngIf="authenticated">
+                <a class="nav-link" [routerLink]="['carrerasTecnicas']">Carreras Técnicas</a>
+            </li>
+            <li class="nav-item" *ngIf="authenticated">
                 <a class="nav-link" [routerLink]="['modulos']">Modulos</a>
             </li>
             <li class="nav-item" *ngIf="authenticated">

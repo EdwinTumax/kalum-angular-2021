@@ -11,13 +11,15 @@ import { AuthService } from './components/usuarios/auth.service';
 import { ClasesService } from './components/home/clases.service';
 import { AuthInterceptor } from './components/interceptors/auth';
 import { TokenInterceptor } from './components/interceptors/token';
+import { CarrerasTecnicasComponent } from './components/carreras-tecnicas/carreras-tecnicas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    CarrerasTecnicasComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+<div class="card border-primary mt-3">
+    <div class="card-header">Listado de carreras técnicas</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Carreras técnicas</h5>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Carrera ténica</th>
+                    <th>Modulos</th>
+                </tr>                
+            </thead>
+            <tbody *ngFor="let item of carrerasTecnicas">
+                <tr>
+                    <td>{{item.nombre}}</td>
+                    <td>
+                        <button type="button" name="modulos" class="btn btn-primary btn-sm">Modulos</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

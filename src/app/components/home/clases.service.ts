@@ -12,7 +12,8 @@ export class ClasesService {
 
   getClases() : Observable<Clase[]> {
     const urlEndPoint = 'http://localhost:8088/kalum-notas/v1/clases';
-    const httpHeaders = new HttpHeaders({'Content-Type': 'application/json', 'Authorization' : `Bearer ${sessionStorage.getItem('token')}`});
-    return this.httpClient.get<Clase[]>(urlEndPoint,{headers: httpHeaders});
+    //const httpHeaders = new HttpHeaders({'Content-Type': 'application/json', 'Authorization' : `Bearer ${sessionStorage.getItem('token')}`});
+    //return this.httpClient.get<Clase[]>(urlEndPoint,{headers: httpHeaders});
+    return this.httpClient.get<Clase[]>(urlEndPoint);
   }
 }
