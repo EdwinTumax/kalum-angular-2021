@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
 
   public get name(): string {
     if(this.authService != null){
-      this._name = this.authService.usuario.email;
+      this._name = `${this.authService.usuario.apellidos} ${this.authService.usuario.nombres}`; ;
       return this._name
     }
     return null;

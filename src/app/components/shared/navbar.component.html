@@ -17,6 +17,9 @@
                 <a class="nav-link" [routerLink]="['modulos']">Modulos</a>
             </li>
             <li class="nav-item" *ngIf="authenticated">
+                <a class="nav-link" [routerLink]="['asignacionesPorAlumno']">Mis asignaciones</a>
+            </li>
+            <li class="nav-item" *ngIf="authenticated">
                 <a class="nav-link" [routerLink]="['about']">about</a>
             </li>
         </ul>

@@ -50,7 +50,12 @@ export class AuthService {
 
   saveUser(payload: any) :  void {
     this._usuario = new Usuario();
-    this._usuario.email = payload.email;    
+    this._usuario.email = payload.email;
+    this._usuario.nombres = payload.nombres;
+    this._usuario.apellidos = payload.apellidos;
+    this._usuario.username = payload.username;
+    this._usuario.carne = payload.carne;
+    this._usuario.roles = payload.roles;
     sessionStorage.setItem('usuario',JSON.stringify(this._usuario));
   }
 
@@ -68,7 +73,7 @@ export class AuthService {
 
   isAuthenticated(): boolean {
     const payload = this.getToken(this.token)
-    if(payload != null && payload.name && payload.name.length > 0){
+    if(payload != null && payload.username && payload.username.length > 0){
       return true;
     }
     return false;

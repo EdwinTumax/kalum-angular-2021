@@ -1,0 +1,37 @@
+<div class="card bg-dark text-white mt-5">
+    
+    <div class="card-header">Proceso de asignación</div>
+    <div class="card-body">
+        <form>
+            <div class="form-group row">
+                <label for="carne" class="col-form-label col-sm-2">Carné</label>
+                <div class="col-sm-6">
+                    <input type="text" [(ngModel)]="usuario.carne" class="form-control" name="carne" placeholder="Número de carné">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="apellidos" class="col-form-label col-sm-2">Apellidos</label>
+                <div class="col-sm-6">
+                    <input type="text" [(ngModel)]="usuario.apellidos" class="form-control" name="apellidos" placeholder="Apellido del alumno">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="nombres" class="col-form-label col-sm-2">Nombres</label>
+                <div class="col-sm-6">
+                    <input type="text" [(ngModel)]="usuario.nombres" class="form-control" name="nombres" placeholder="Nombre del alumno">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="descripcion" class="col-form-label col-sm-2">Descripción</label>
+                <div class="col-sm-6">
+                    <input type="text" [(ngModel)]="clase.descripcion" class="form-control" name="descripcion" placeholder="Descripción de la clase para asignar">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button">Realizar asignación</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

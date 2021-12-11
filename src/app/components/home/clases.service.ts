@@ -16,4 +16,10 @@ export class ClasesService {
     //return this.httpClient.get<Clase[]>(urlEndPoint,{headers: httpHeaders});
     return this.httpClient.get<Clase[]>(urlEndPoint);
   }
+  
+  getClase(uuid : string) : Observable<Clase> {
+    const urlEndPoint = `http://localhost:8088/kalum-notas/v1/clases/${uuid}`;
+    return this.httpClient.get<Clase>(urlEndPoint);
+  } 
+
 }

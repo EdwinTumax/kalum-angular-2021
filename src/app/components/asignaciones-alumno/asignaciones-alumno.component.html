@@ -1,0 +1,28 @@
+<div class="card border-primary mt-3">
+    <div class="card-header">Mis Asignaciones</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Listado de asignaciones</h5>    
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Descripcion</th>
+                    <th>Fecha asignación</th>
+                    <th>Eliminar</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of asignacionesPorAlumno">
+                <tr>
+                    <td>{{item.clase.descripcion}}</td>
+                    <td>{{item.fechaAsignacion}}</td>
+                    <td>
+                        <button type="button" name="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                    <td>
+                        <button type="button" name="modificar" class="btn btn-primary btn-sm">Modificar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -23,7 +23,7 @@
                     <td>{{item.cupoMaximo}}</td>
                     <td>{{item.cupoMinimo}}</td>
                     <td>
-                        <button type="button" name="asignacion" class="btn btn-primary btn-sm">Asignacion</button>
+                        <button [routerLink]="['/asignacionesPorAlumno/form',item.claseId]" type="button" name="asignacion" class="btn btn-primary btn-sm">Asignacion</button>
                     </td>
                 </tr>
             </tbody>

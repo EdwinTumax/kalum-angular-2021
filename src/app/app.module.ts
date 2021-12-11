@@ -12,6 +12,8 @@ import { ClasesService } from './components/home/clases.service';
 import { AuthInterceptor } from './components/interceptors/auth';
 import { TokenInterceptor } from './components/interceptors/token';
 import { CarrerasTecnicasComponent } from './components/carreras-tecnicas/carreras-tecnicas.component';
+import { AsignacionesAlumnoComponent } from './components/asignaciones-alumno/asignaciones-alumno.component';
+import { FormAsignacionAlumnoComponent } from './components/asignaciones-alumno/form-asignacion-alumno.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CarrerasTecnicasComponent } from './components/carreras-tecnicas/carrer
     NavbarComponent,
     HomeComponent,
     LoginComponent,
-    CarrerasTecnicasComponent
+    CarrerasTecnicasComponent,
+    AsignacionesAlumnoComponent,
+    FormAsignacionAlumnoComponent,
   ],
   imports: [
     BrowserModule,
