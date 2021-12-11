@@ -16,7 +16,7 @@
                     <td>{{item.clase.descripcion}}</td>
                     <td>{{item.fechaAsignacion}}</td>
                     <td>
-                        <button type="button" name="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
+                        <button (click)="eliminar(item)" type="button" name="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
                     </td>
                     <td>
                         <button type="button" name="modificar" class="btn btn-primary btn-sm">Modificar</button>

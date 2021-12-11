@@ -2,11 +2,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Usuario } from './usuario';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+
+  urlEndPoint = environment.baseUrl; 
 
   private _usuario: Usuario;
   private _token: string;
@@ -35,9 +37,8 @@ export class AuthService {
 
 
   login(usuario: Usuario) : Observable<any> {
-    const urlEndPoint = 'http://localhost:8088/kalum-notas/v1/cuentas/login';
     const httpHeaders = new HttpHeaders({'Content-Type':'application/json'});
-    return this.http.post(urlEndPoint,usuario, {headers: httpHeaders});
+    return this.http.post(`${this.urlEndPoint}/cuentas/login`,usuario, {headers: httpHeaders});
   }
 
   logout() : void {
